@@ -64,4 +64,12 @@ $(document).ready(function(){
 		$('#Mission').hide();
 		$('#div_contact').toggle();
 	});
+
+	function load(){
+			var feed =[ "http://www.sciencenews.org/view/feed/name/allrss"];
+			var fg = new GFdynamicFeedControl(feed[0],"div_blog");
+		}
+		google.load("feeds",1);
+		google.setOnLoadCallback(load);	
+
 });
