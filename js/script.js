@@ -66,8 +66,10 @@ $(document).ready(function(){
 	});
 
 	function load(){
-			var feed =[ "http://www.sciencenews.org/view/feed/name/allrss"];
+			var feed =[ "http://www.sciencenews.org/view/feed/name/allrss",
+						"http://feeds.nature.com/news/rss/today"];
 			var fg = new GFdynamicFeedControl(feed[0],"div_blog");
+			var fg = new GFdynamicFeedControl(feed[0],"div_blog1");
 		}
 		google.load("feeds",1);
 		google.setOnLoadCallback(load);	
