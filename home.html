@@ -3,14 +3,18 @@
 	<title>SparkMind Inc.</title>
 	<link rel="stylesheet" type="text/css" href="css/global.css">
 	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-	 <script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js" type="text/javascript"></script>	 	
-	<script type="text/javascript" src="js/script.js"></script>	
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js" type="text/javascript"></script>
+
+   	<script type="text/javascript" src="js/script.js"></script>	
 </head>
 
 <body>
 	<div id="masthead">
-		<a href="#" id="homelink"><img src="image/sparkmind.gif" alt="my company image"/></a>
+		<a href="#Home" id="homelink"><img src="image/sparkmind.gif" alt="my company image"/></a>
+		<p id="today">March 6, 2014</p>
+		<p id="today">Sign In</p>
+		<p id="today">Sign UP</p>
 		<ul class="navlinks">
 			<li class="first"><a href="#Home" id="a_home">Home</a></li>
 			<li><a href="#">About us</a>
@@ -48,7 +52,7 @@
 			<li><a href="http://apriyada.blogspot.com/" id="a_blogs" target="_blank">Our blogs</li>
 			<li class="last"><a href="#" id="a_contact">Contact us</a></li>
 		</ul>
-		<p id="today">March 6, 2014</p>
+		
 	</div>
 
 	<div id="content">
@@ -56,7 +60,7 @@
 		<div id ="Home">
 
 		<h2>Home</h2>
-		<p> SparkMind Inc. is a technology consulting services company specialized in the area of web application development and maintenance (ADM), system architecture and design, integration and support operating mainly on following technology stack: <b>Spring, Hibernate, Java, J2EE, jQuery, Ruby on Rails, MySql and Php.</b>  
+		<p> SparkMind Technologies is a technology consulting services company specialized in the area of web application development and maintenance (ADM), system architecture and design, integration and support operating mainly on following technology stack: <b>Spring, Hibernate, Java, J2EE, jQuery, Ruby on Rails, MySql and Php.</b>  
 		</p>
 		<p> 
 		We specialize in open source technology stack with deep sense of architecture and design. We design and develop the applications with keen sense of performance and scalability.
@@ -130,12 +134,20 @@
 
 		 	</form>
 	</div>
-	<div id="div_blog">
-		<p>Debuging div blog 1</p>
+	
+	<div id="feed1">
 	</div>
-	<div id="div_blog1">
-		<p>Debuging div blog 2</p>
+	
+	<div id="feed2">
+		<p></p>
 	</div>
+	<div id="feed3">
+		<p></p>
+	</div>
+	<div id="feed4">
+		<p></p>
+	</div>			
+
 	</div>
 	
 	<div id="sidebar">
@@ -144,18 +156,19 @@
 			<input type="submit" value="Search"/>
 		</form>
 		<div id="news-feed">
-			<h3>News Feed</h3>
+			<h3>Tech Trend</h3>
 			<h4>Technology Trends</h4>
 			<p>
 				What's latest in technology? 
 				Wanna read Gartner Reports?
 			</p>
-			<img src="image/data-analytics.jpg" alt="Gartner reports">
+			<a href="http://www.gartner.com/newsroom/id/2603623"><img src="image/data-analytics.jpg" alt="Gartner reports"></a>
 		</div>
 	
 		<div id="post-archive">
-			<h3>Post Archive</h3>
-			<table cellspacing="2">
+			<h3>News feed</h3>
+			<div id="feed5"> </div>
+			<!--<table cellspacing="2">
 				<caption>March 2014</caption>
 				<thead>
 					<tr>
@@ -224,7 +237,7 @@
 					<td class="sat"></td>
 					</tr>
 				</tbody>
-			</table>
+			</table> -->
 		</div>
 	</div>
 
@@ -232,6 +245,7 @@
 		<i>All Rights Reserved--</i> SparkMind Inc. @ 2014
 		
 	</div>
+	<style type="text/css"> @import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css") </style>
 
 </body>
 </html>

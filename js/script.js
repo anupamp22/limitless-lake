@@ -18,8 +18,6 @@ $(document).ready(function(){
 
 	}
 	myClock();
-
-
 	//the hide and show of the divs upon menu selection
 	$('#Home').show();
 	$('#Company').hide();
@@ -64,14 +62,30 @@ $(document).ready(function(){
 		$('#Mission').hide();
 		$('#div_contact').toggle();
 	});
-
-	function load(){
-			var feed =[ "http://www.sciencenews.org/view/feed/name/allrss",
-						"http://feeds.nature.com/news/rss/today"];
-			var fg = new GFdynamicFeedControl(feed[0],"div_blog");
-			var fg = new GFdynamicFeedControl(feed[0],"div_blog1");
-		}
-		google.load("feeds",1);
-		google.setOnLoadCallback(load);	
-
 });
+
+//Google API feeds
+google.load("feeds",1);
+function initialize(){
+		/*var feed = new google.feeds.Feed("http://www.sciencenews.org/view/feed/name/allrss");
+		feed.load(function(result){
+			if (!result.error) {
+				var container = document.getElementById("feed");
+      			for (var i = 0; i < result.feed.entries.length; i++) {
+		            var entry = result.feed.entries[i];
+		            var div = document.createElement("div");
+		            div.appendChild(document.createTextNode(entry.title));
+		            container.appendChild(div);
+      			}
+    		}
+		});*/
+		var feed =[ "http://feeds.feedburner.com/JavaCodeGeeks",
+					"http://www.javaworld.com/category/mobile-java/index.rss",
+					"http://www.javaworld.com/category/enterprise-java/index.rss",
+					"http://www.javaworld.com/category/core-java/index.rss"];
+		var fg = new GFdynamicFeedControl(feed[0],"feed5");
+		/*var fg = new GFdynamicFeedControl(feed[1],"feed2");
+		var fg = new GFdynamicFeedControl(feed[2],"feed3");
+		var fg = new GFdynamicFeedControl(feed[3],"feed4");*/		
+	}	
+	google.setOnLoadCallback(initialize);	

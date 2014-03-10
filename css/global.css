@@ -25,11 +25,13 @@ p{
 	background: url(../image/curl.gif) 100% 100% no-repeat;
 }
 #today{
-	margin-top: -1.66em; /* this pulls the today's date in the masthead - trick of negative top margin */
+	margin-top: -1.99em; /* this pulls the today's date in the masthead - trick of negative top margin */
 	padding: 0 2em 0 0;
 	font-weight: bold;
 	text-align: right;
 	line-height: 1;
+	float: right;
+
 }
 #content{
 	float: left;
@@ -75,6 +77,11 @@ p{
 	color: #FFF;
 	padding: 0 1em 1em;
 	margin-top: 0.75em;
+}
+#sidebar div div {
+	background: 686397;
+	color: white;
+	font-weight:bold;
 }
 #sidebar div h3{
 	font-size: 1.25em;
@@ -132,6 +139,9 @@ p{
 #footer a{
 	color: #333;
 	text-decoration: underline;
+}
+#feed5{
+	background: blue;
 }
 
 /* 
