@@ -73,15 +73,16 @@ p{
 	width: 9em;
 }
 #sidebar div {
-	background: #343C2D;
+	background: #343C2D;/* ccc 686397 343C2D*/
 	color: #FFF;
 	padding: 0 1em 1em;
-	margin-top: 0.75em;
+	margin-top: 0.75em;	
 }
 #sidebar div div {
 	background: 686397;
-	color: white;
 	font-weight:bold;
+	background: #ccc;
+	color: black;
 }
 #sidebar div h3{
 	font-size: 1.25em;
@@ -92,7 +93,7 @@ p{
 #news-feed h4{
 	margin: 0 0 0 0.5em;
 	padding: 0.5em 0;
-	border-bottom: 1px solid #FFF;
+	border-bottom: 2px solid #FFF;
 	font-weight: normal;
 }
 #news-feed p:first line{
