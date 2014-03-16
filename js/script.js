@@ -110,4 +110,5 @@ function initialize(){
       //$('#searchResults').show();
     }
     google.setOnLoadCallback(onSearch);
+    
 	
