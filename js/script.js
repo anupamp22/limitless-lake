@@ -62,7 +62,7 @@ $(document).ready(function(){
 		$('#Mission').hide();
 		$('#div_contact').toggle();
 	});
-});
+}); //end of document loading
 
 //Google API feeds
 google.load("feeds",1);
@@ -89,3 +89,25 @@ function initialize(){
 		var fg = new GFdynamicFeedControl(feed[3],"feed4");*/		
 	}	
 	google.setOnLoadCallback(initialize);	
+	
+//Google Search API feeds
+    google.load("search", "1");
+
+    // Call this function when the page has been loaded
+    function onSearch() {
+      var searchControl = new google.search.SearchControl();
+   // create a draw options object so that we
+      // can position the search form root
+      var options = new google.search.DrawOptions();
+      options.setSearchFormRoot(document.getElementById("search"));
+      
+      searchControl.addSearcher(new google.search.WebSearch());
+      searchControl.addSearcher(new google.search.NewsSearch());
+      //searchControl.draw(document.getElementById("searchcontrol");
+      searchControl.draw(document.getElementById("searchResults"), options);
+      //searchControl.execute("Ferrari Enzo");
+      //$('#content').hide();
+      //$('#searchResults').show();
+    }
+    google.setOnLoadCallback(onSearch);
+	
