@@ -44,6 +44,9 @@ p{
 	color: #686397;
 	font-size: 1.5em;
 }
+#searchResults{
+	width: 600px;
+}
 #content h1 b{
 	color: #B0D742; 
 }

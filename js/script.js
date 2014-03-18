@@ -32,6 +32,7 @@ $(document).ready(function(){
 		$('#Vision').hide();
 		$('#Mission').hide();
 		$('#div_contact').hide();
+		$('#searchResults').hide();
 	});
 
 	$('#a_company').click(function(){
@@ -40,6 +41,7 @@ $(document).ready(function(){
 		$('#Vision').hide();
 		$('#Mission').hide();
 		$('#div_contact').hide();
+		$('#searchResults').hide();
 	});
 	$('#a_vision').click(function(){
 		$('#Home').hide();
@@ -47,6 +49,7 @@ $(document).ready(function(){
 		$('#Vision').toggle();
 		$('#Mission').hide();
 		$('#div_contact').hide();
+		$('#searchResults').hide();
 	});
 	$('#a_mission').click(function(){
 		$('#Home').hide();
@@ -54,6 +57,7 @@ $(document).ready(function(){
 		$('#Vision').hide();
 		$('#Mission').toggle();
 		$('#div_contact').hide();
+		$('#searchResults').hide();
 	});
 	$('#a_contact').click(function(){
 		$('#Home').hide();
@@ -61,7 +65,18 @@ $(document).ready(function(){
 		$('#Vision').hide();
 		$('#Mission').hide();
 		$('#div_contact').toggle();
+		$('#searchResults').hide();
 	});
+	
+	$('#search').click(function(){
+		$('#Home').hide();
+		$('#Company').hide();
+		$('#Vision').hide();
+		$('#Mission').hide();
+		$('#div_contact').hide();
+		$('#searchResults').show();		
+	});
+	
 }); //end of document loading
 
 //Google API feeds
@@ -90,7 +105,7 @@ function initialize(){
 	}	
 	google.setOnLoadCallback(initialize);	
 	
-//Google Search API feeds
+	//Google Search API feeds
     google.load("search", "1");
 
     // Call this function when the page has been loaded
