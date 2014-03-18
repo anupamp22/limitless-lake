@@ -74,7 +74,7 @@ $(document).ready(function(){
 		$('#Vision').hide();
 		$('#Mission').hide();
 		$('#div_contact').hide();
-		$('#searchResults').show();		
+		$('#searchResults').toggle();		
 	});
 	
 }); //end of document loading
