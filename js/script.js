@@ -25,6 +25,7 @@ $(document).ready(function(){
 	$('#Mission').hide();
 	$('#error').hide();
 	$('#div_contact').hide();
+	$('#searchResults').hide();
 
 	$('#a_home').click(function(){
 		$('#Home').toggle();
